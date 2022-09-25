@@ -1,0 +1,1 @@
+I dislike Word as I find it feature bloated, un-performative and memory intensive compared to open source alternatives. I also had a moment where I had to use it for a project and it destroyed the formatting of my file which I then had to fix it in another text editor. For a potentially expensive program I have higher expectations.

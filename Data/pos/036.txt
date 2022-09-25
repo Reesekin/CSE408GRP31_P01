@@ -1,0 +1,12 @@
+When I first became interested in editing images both for recreational and for project purposes,
+I ended up going with Gimp since it was a free alternative to Adobe Photoshop. Since then,
+I've become reasonably proficient with the program and it has provided me with the tools to edit images,
+gifs, and even make small animations with the wide variety of editing capabilities that it possesses.
+Even though it falls short of a paid option in some cases, for the casual and even low level professional user,
+Gimp can pretty much easily handle any meme, logo, background, etc. and is also verify intuitive with large
+source of documentation online if you get stuck. In many cases, having such a slimmed down piece of software for 
+editing can actually be much quicker than using a paid option especially if you're working with relatively simple image editing. 
+You can easily add text, change scale, or drag elements on top of a lower layer and export the image within seconds.  
+Despite being free, the program does offer some more advanced editing options, including specialized filters, distortion effects, 
+and even animation capabilities. While these may not be everything a seasoned professional needs, they have proved to be more 
+than adequate for the projects I work with.

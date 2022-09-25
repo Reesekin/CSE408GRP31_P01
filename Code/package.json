@@ -1,0 +1,14 @@
+{
+  "name": "cse408p01",
+  "version": "1.0.0",
+  "description": "CSE408 - Project1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "group31",
+  "license": "ISC",
+  "dependencies": {
+    "natural": "^5.2.3"
+  }
+}

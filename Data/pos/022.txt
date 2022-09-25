@@ -1,0 +1,8 @@
+
+I liked watching movies a lot since I was young. In the past, there were not many 
+platforms to watch movies or videos. Therefore, I used to watch movies on the 
+computer using the GOM player. The GOM player has so many users that it can be said that 
+everyone uses it in Korea. GOM Player supports file playback in various formats 
+such as AVI, MP4, MKV, FLV, WMV, and MOV, and Windows can find codecs, play damaged 
+files/downloading files, and recommends subtitles suitable for automatic subtitle 
+sink control and playback videos through GOM Player, which collects more than 10 years of data. 
