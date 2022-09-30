@@ -3,16 +3,39 @@
     Fall 2022, Group 31
     Members: Tommy Thai, Huy Tao, Jeffrey Li
     P01: Text Classification and Sentimental Analysis
-    Written by: Tommy Thai
 
     Due Date: 9/29/2022
     Language: javascript
 */
-
+const stem = process.env.STEMWORDS === 'true' ? true : false;
 var fs = require('fs');
 let natural = require('natural');
 
 const {buildVoc} = require('./buildVoc.js');
+
+function featurize(document, voc){
+    //Should already be in lowercase but do it in case.
+    const lowerVoc = voc.map(word => word.toLowerCase());
+    //The usual
+    const regex = /[\r \n \t , . : ; ' " ` { } / ? ! # @ $ % ^ & * ( ) - +]+/g;
+    var words = fs.readFileSync(document, 'utf8').split(" ").filter(Boolean);
+    words = words.map(word => word.replace(/[^\x00-\x7F]/g, ""));
+    words = words.map(word => word.replace(regex, ""));
+    if (stem) words = words.map(word => natural.PorterStemmer.stem(word));
+    words = words.map(word => word.toLowerCase());
+    let feature = [];
+    let i = 0;
+    for (const word of lowerVoc){
+        feature[i] = 0;
+        for (const word2 of words){
+            if (word == word2){
+                feature[i] += 1;
+            }
+        }
+        i++;
+    }
+    return feature;
+}
 
 function cse408_bow(filepath, voc){
     //Should already be in lowercase but do it in case.
@@ -23,7 +46,7 @@ function cse408_bow(filepath, voc){
     var words = fs.readFileSync(filepath, 'utf8').split(" ").filter(Boolean);
     words = words.map(word => word.replace(/[^\x00-\x7F]/g, ""));
     words = words.map(word => word.replace(regex, ""));
-    words = words.map(word => natural.PorterStemmer.stem(word));
+    if (stem) words = words.map(word => natural.PorterStemmer.stem(word));
 
     var bow = new Object();
     
@@ -43,26 +66,26 @@ function cse408_bow(filepath, voc){
     return {feat_vec, count};
 }
 
-// //vocabs
-// const posFolder = '../Data/pos/';
-// const negFolder = '../Data/neg/';
-// const positive = buildVoc(posFolder);
-// const negative = buildVoc(negFolder);
-// const intersection = (a, b) => {
-//     const s = new Set(b);
-//     return a.filter(x => s.has(x));
-// }
-// const intersect = intersection(positive.voc, negative.voc);
-// //remove intersection from positive and negative vocabs
-// const posVoc = positive.voc.filter(word => !intersection(positive.voc, negative.voc).includes(word)); //true pos vocab
-// const negVoc = negative.voc.filter(word => !intersection(positive.voc, negative.voc).includes(word)); //true neg vocab
-// let voc = posVoc.concat(negVoc).concat(intersect);
+//vocabs
+const posFolder = '../Data/pos/';
+const negFolder = '../Data/neg/';
+const positive = buildVoc(posFolder);
+const negative = buildVoc(negFolder);
+const intersection = (a, b) => {
+    const s = new Set(b);
+    return a.filter(x => s.has(x));
+}
+const intersect = intersection(positive.voc, negative.voc);
+//remove intersection from positive and negative vocabs
+const posVoc = positive.voc.filter(word => !intersection(positive.voc, negative.voc).includes(word)); //true pos vocab
+const negVoc = negative.voc.filter(word => !intersection(positive.voc, negative.voc).includes(word)); //true neg vocab
+let voc = posVoc.concat(negVoc).concat(intersect);
 
 // //test
 // const test = cse408_bow('../Data/pos/002.txt', voc);
 // console.log(test.feat_vec);
 // console.log(test.count);
 
-module.exports = {cse408_bow};
+module.exports = {cse408_bow, featurize};
 
 

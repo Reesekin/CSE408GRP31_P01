@@ -9,6 +9,8 @@
   "author": "group31",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.0.3",
+    "mathjs": "^11.2.1",
     "natural": "^5.2.3"
   }
 }

@@ -3,7 +3,6 @@
     Fall 2022, Group 31
     Members: Tommy Thai, Huy Tao, Jeffrey Li
     P01: Text Classification and Sentimental Analysis
-    Written by: Tommy Thai, Huy Tao
 
     Due Date: 9/29/2022
     Language: javascript
@@ -60,20 +59,4 @@ function sentimentalAnalysis(filepath){
     }
 }
 
-for (let i = 1; i < 41; i++) {
-    if (i < 10){
-        sentimentalAnalysis(`../Data/pos/00${1}.txt`);
-    }
-    else {
-        sentimentalAnalysis(`../Data/pos/0${i}.txt`);
-    }
-}
-
-for (let i = 1; i < 41; i++) {
-    if (i < 10){
-        sentimentalAnalysis(`../Data/neg/00${i}.txt`);
-    }
-    else {
-        sentimentalAnalysis(`../Data/neg/0${i}.txt`);
-    }
-}
+module.exports = {sentimentalAnalysis};

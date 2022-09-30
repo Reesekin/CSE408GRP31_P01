@@ -3,7 +3,6 @@
     Fall 2022, Group 31
     Members: Tommy Thai, Huy Tao, Jeffrey Li
     P01: Text Classification and Sentimental Analysis
-    Written by: Tommy Thai
 
     Due Date: 9/29/2022
     Language: javascript
@@ -14,7 +13,60 @@
         Output: matlab cell array voc, which represents the vocabulary of the words shown in the training
         data, except the stop words (stop words list is embedded in the code template)
 */
-
+const filename = process.argv[1];
+//get string up to last \
+const wd = (filename.match(/(.*)[\/\\]/)[0].length);
+const file = filename.substring(wd, filename.length-3);
+const params = process.argv.slice(2);
+let stem = false;
+let help = false;
+let DstType = 1;
+let clean = false;
+let K = 3;
+for (param of params) {
+    if (param == '-stem') stem = true;
+    if (param == '-nostem') stem = false;
+    if (param == '-h' || param == '-help') help = true;
+    if (param == '-clean' || param == '-c') clean = 0;
+}
+const part = file == 'P01Part1_test' ? 1 : 0;
+if (part) {
+    switch(params[0]) {
+        case '1':
+            console.log('Running Euclidian Distance Similarity Test OPT:1');
+            DstType = 1;
+            break;
+        case '2':
+            console.log('Running Cosine Similarity Test OPT:2');
+            DstType = 2;
+            break;
+        case '3':
+            console.log('Running Word Similarity Test OPT:3');
+            DstType = 3;
+            break;
+        case undefined:
+            help = true;
+            break;
+        default:
+            help = true;
+            break;
+    }
+}
+if ( !help ) {
+    if (stem){
+        console.log('Stemming is enabled!');
+    }
+    else console.log('Stemming is disabled!');
+}
+if (part){
+    if (params[1] == undefined || params[0] == undefined) {
+        help = true;
+        console.log('Invalid arguments');
+    } else {
+        K = params[1]
+        console.log('K = ' + K);
+    }
+}
 var fs = require('fs');
 var natural = require('natural');
 
@@ -34,7 +86,7 @@ let stopword = ['ourselves', 'hers', 'between', 'yourself', 'but', 'again', 'the
     'which', 'those', 'i', 'after', 'few', 'whom', 't', 'being', 'if',
     'theirs', 'my', 'against', 'a', 'by', 'doing', 'it', 'how',
     'further', 'was', 'here', 'than'];
-    stopword = stopword.map(word => natural.PorterStemmer.stem(word));
+    if (stem) stopword = stopword.map(word => natural.PorterStemmer.stem(word));
 function buildVoc(folder) {
     var path = folder;
     //path check
@@ -52,7 +104,7 @@ function buildVoc(folder) {
         //remove delimiters and other
         words = words.map(word => word.replace(/[\r \n \t , . : ; ' " ` { } / ? ! # @ $ % ^ & * ( ) - +]+/g, ""));
         //stem words
-        words = words.map(word => natural.PorterStemmer.stem(word));
+        if (stem) words = words.map(word => natural.PorterStemmer.stem(word));
         //push to voc if not in stopword and not duplicate
         for (const word of words) {
             const lowerWord = word.toLowerCase();
@@ -63,23 +115,23 @@ function buildVoc(folder) {
     }
     return {voc} //return voc
 }
-//vocabs
-const posFolder = '../Data/pos/';
-const negFolder = '../Data/neg/';
-const positive = buildVoc(posFolder);
-const negative = buildVoc(negFolder);
-const intersection = (a, b) => {
-    const s = new Set(b);
-    return a.filter(x => s.has(x));
-}
-const intersect = intersection(positive.voc, negative.voc);
-//remove intersection from positive and negative vocabs
-const posVoc = positive.voc.filter(word => !intersection(positive.voc, negative.voc).includes(word)); //true pos vocab
-const negVoc = negative.voc.filter(word => !intersection(positive.voc, negative.voc).includes(word)); //true neg vocab
-let voc = posVoc.concat(negVoc).concat(intersect);
+// //vocabs
+// const posFolder = '../Data/pos/';
+// const negFolder = '../Data/neg/';
+// const positive = buildVoc(posFolder);
+// const negative = buildVoc(negFolder);
+// const intersection = (a, b) => {
+//     const s = new Set(b);
+//     return a.filter(x => s.has(x));
+// }
+// const intersect = intersection(positive.voc, negative.voc);
+// //remove intersection from positive and negative vocabs
+// const posVoc = positive.voc.filter(word => !intersection(positive.voc, negative.voc).includes(word)); //true pos vocab
+// const negVoc = negative.voc.filter(word => !intersection(positive.voc, negative.voc).includes(word)); //true neg vocab
+// let voc = posVoc.concat(negVoc).concat(intersect);
 
 // //test
 // console.table(stopword);
 // console.table(voc);
 
-module.exports = {buildVoc};
+module.exports = {buildVoc, help, DstType, K, clean};

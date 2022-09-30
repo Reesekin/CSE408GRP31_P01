@@ -1,0 +1,513 @@
+Running Euclidian Distance Similarity Test OPT:1
+Stemming is disabled!
+K = 3
+[
+  { file: '../Data/neg/034.txt', value: 1, truth: 0 },
+  { file: '../Data/neg/011.txt', value: 1, truth: 0 },
+  { file: '../Data/neg/008.txt', value: 1, truth: 0 },
+  { file: '../Data/pos/014.txt', value: 1, truth: 1 }
+]
+{ posCt: 1, negCt: 3 }
+Document ../Data/pos/001.txt -> Ground Truth: Positive, Predicted as: Negative
+[
+  { file: '../Data/neg/025.txt', value: 0, truth: 0 },
+  { file: '../Data/pos/011.txt', value: 0, truth: 1 },
+  { file: '../Data/pos/006.txt', value: 0, truth: 1 }
+]
+{ posCt: 2, negCt: 1 }
+Document ../Data/pos/002.txt -> Ground Truth: Positive, Predicted as: Positive
+[]
+{ posCt: 0, negCt: 0 }
+Document ../Data/pos/003.txt -> Ground Truth: Positive, Predicted as: Positive
+[
+  { file: '../Data/neg/028.txt', value: 1, truth: 0 },
+  { file: '../Data/neg/006.txt', value: 1, truth: 0 },
+  { file: '../Data/pos/034.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/030.txt', value: 0, truth: 1 }
+]
+{ posCt: 2, negCt: 2 }
+Document ../Data/pos/004.txt -> Ground Truth: Positive, Predicted as: Positive
+[ { file: '../Data/pos/029.txt', value: 1, truth: 1 } ]
+{ posCt: 1, negCt: 0 }
+Document ../Data/pos/005.txt -> Ground Truth: Positive, Predicted as: Positive
+[
+  { file: '../Data/neg/025.txt', value: 0, truth: 0 },
+  { file: '../Data/pos/011.txt', value: 0, truth: 1 },
+  { file: '../Data/pos/002.txt', value: 0, truth: 1 }
+]
+{ posCt: 2, negCt: 1 }
+Document ../Data/pos/006.txt -> Ground Truth: Positive, Predicted as: Positive
+[
+  { file: '../Data/neg/021.txt', value: 1, truth: 0 },
+  { file: '../Data/neg/019.txt', value: 1, truth: 0 },
+  { file: '../Data/neg/006.txt', value: 1, truth: 0 },
+  { file: '../Data/pos/037.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/036.txt', value: 0, truth: 1 },
+  { file: '../Data/pos/034.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/023.txt', value: 0, truth: 1 }
+]
+{ posCt: 4, negCt: 3 }
+Document ../Data/pos/007.txt -> Ground Truth: Positive, Predicted as: Positive
+[
+  { file: '../Data/neg/040.txt', value: 1, truth: 0 },
+  { file: '../Data/neg/036.txt', value: 0, truth: 0 },
+  { file: '../Data/pos/019.txt', value: 0, truth: 1 },
+  { file: '../Data/pos/017.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/015.txt', value: 1, truth: 1 }
+]
+{ posCt: 3, negCt: 2 }
+Document ../Data/pos/008.txt -> Ground Truth: Positive, Predicted as: Positive
+[
+  { file: '../Data/neg/023.txt', value: 1, truth: 0 },
+  { file: '../Data/neg/012.txt', value: 0, truth: 0 },
+  { file: '../Data/neg/009.txt', value: 1, truth: 0 }
+]
+{ posCt: 0, negCt: 3 }
+Document ../Data/pos/009.txt -> Ground Truth: Positive, Predicted as: Negative
+[
+  { file: '../Data/neg/027.txt', value: 0, truth: 0 },
+  { file: '../Data/neg/026.txt', value: 1, truth: 0 },
+  { file: '../Data/neg/016.txt', value: 1, truth: 0 },
+  { file: '../Data/pos/033.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/021.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/016.txt', value: 0, truth: 1 }
+]
+{ posCt: 3, negCt: 3 }
+Document ../Data/pos/010.txt -> Ground Truth: Positive, Predicted as: Positive
+[
+  { file: '../Data/neg/025.txt', value: 0, truth: 0 },
+  { file: '../Data/pos/006.txt', value: 0, truth: 1 },
+  { file: '../Data/pos/002.txt', value: 0, truth: 1 }
+]
+{ posCt: 2, negCt: 1 }
+Document ../Data/pos/011.txt -> Ground Truth: Positive, Predicted as: Positive
+[ { file: '../Data/neg/009.txt', value: 1, truth: 0 } ]
+{ posCt: 0, negCt: 1 }
+Document ../Data/pos/012.txt -> Ground Truth: Positive, Predicted as: Negative
+[
+  { file: '../Data/neg/013.txt', value: 1, truth: 0 },
+  { file: '../Data/pos/040.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/039.txt', value: 1, truth: 1 }
+]
+{ posCt: 2, negCt: 1 }
+Document ../Data/pos/013.txt -> Ground Truth: Positive, Predicted as: Positive
+[
+  { file: '../Data/neg/008.txt', value: 0, truth: 0 },
+  { file: '../Data/pos/020.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/001.txt', value: 1, truth: 1 }
+]
+{ posCt: 2, negCt: 1 }
+Document ../Data/pos/014.txt -> Ground Truth: Positive, Predicted as: Positive
+[
+  { file: '../Data/neg/040.txt', value: 0, truth: 0 },
+  { file: '../Data/neg/036.txt', value: 1, truth: 0 },
+  { file: '../Data/pos/019.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/017.txt', value: 0, truth: 1 },
+  { file: '../Data/pos/008.txt', value: 1, truth: 1 }
+]
+{ posCt: 3, negCt: 2 }
+Document ../Data/pos/015.txt -> Ground Truth: Positive, Predicted as: Positive
+[
+  { file: '../Data/neg/027.txt', value: 0, truth: 0 },
+  { file: '../Data/neg/026.txt', value: 1, truth: 0 },
+  { file: '../Data/neg/016.txt', value: 1, truth: 0 },
+  { file: '../Data/pos/033.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/021.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/010.txt', value: 0, truth: 1 }
+]
+{ posCt: 3, negCt: 3 }
+Document ../Data/pos/016.txt -> Ground Truth: Positive, Predicted as: Positive
+[
+  { file: '../Data/neg/040.txt', value: 0, truth: 0 },
+  { file: '../Data/neg/036.txt', value: 1, truth: 0 },
+  { file: '../Data/pos/019.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/015.txt', value: 0, truth: 1 },
+  { file: '../Data/pos/008.txt', value: 1, truth: 1 }
+]
+{ posCt: 3, negCt: 2 }
+Document ../Data/pos/017.txt -> Ground Truth: Positive, Predicted as: Positive
+[
+  { file: '../Data/neg/031.txt', value: 1, truth: 0 },
+  { file: '../Data/neg/022.txt', value: 0, truth: 0 },
+  { file: '../Data/pos/031.txt', value: 1, truth: 1 }
+]
+{ posCt: 1, negCt: 2 }
+Document ../Data/pos/018.txt -> Ground Truth: Positive, Predicted as: Negative
+[
+  { file: '../Data/neg/040.txt', value: 1, truth: 0 },
+  { file: '../Data/neg/036.txt', value: 0, truth: 0 },
+  { file: '../Data/pos/017.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/015.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/008.txt', value: 0, truth: 1 }
+]
+{ posCt: 3, negCt: 2 }
+Document ../Data/pos/019.txt -> Ground Truth: Positive, Predicted as: Positive
+[
+  { file: '../Data/neg/008.txt', value: 1, truth: 0 },
+  { file: '../Data/pos/014.txt', value: 1, truth: 1 }
+]
+{ posCt: 1, negCt: 1 }
+Document ../Data/pos/020.txt -> Ground Truth: Positive, Predicted as: Positive
+[
+  { file: '../Data/neg/027.txt', value: 1, truth: 0 },
+  { file: '../Data/pos/016.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/010.txt', value: 1, truth: 1 }
+]
+{ posCt: 2, negCt: 1 }
+Document ../Data/pos/021.txt -> Ground Truth: Positive, Predicted as: Positive
+[]
+{ posCt: 0, negCt: 0 }
+Document ../Data/pos/022.txt -> Ground Truth: Positive, Predicted as: Positive
+[
+  { file: '../Data/neg/021.txt', value: 1, truth: 0 },
+  { file: '../Data/neg/019.txt', value: 1, truth: 0 },
+  { file: '../Data/neg/006.txt', value: 1, truth: 0 },
+  { file: '../Data/pos/037.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/036.txt', value: 0, truth: 1 },
+  { file: '../Data/pos/034.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/007.txt', value: 0, truth: 1 }
+]
+{ posCt: 4, negCt: 3 }
+Document ../Data/pos/023.txt -> Ground Truth: Positive, Predicted as: Positive
+[]
+{ posCt: 0, negCt: 0 }
+Document ../Data/pos/024.txt -> Ground Truth: Positive, Predicted as: Positive
+[
+  { file: '../Data/neg/017.txt', value: 1, truth: 0 },
+  { file: '../Data/pos/026.txt', value: 0, truth: 1 }
+]
+{ posCt: 1, negCt: 1 }
+Document ../Data/pos/025.txt -> Ground Truth: Positive, Predicted as: Positive
+[
+  { file: '../Data/neg/017.txt', value: 1, truth: 0 },
+  { file: '../Data/pos/025.txt', value: 0, truth: 1 }
+]
+{ posCt: 1, negCt: 1 }
+Document ../Data/pos/026.txt -> Ground Truth: Positive, Predicted as: Positive
+[ { file: '../Data/neg/033.txt', value: 0, truth: 0 } ]
+{ posCt: 0, negCt: 1 }
+Document ../Data/pos/027.txt -> Ground Truth: Positive, Predicted as: Negative
+[ { file: '../Data/neg/015.txt', value: 0, truth: 0 } ]
+{ posCt: 0, negCt: 1 }
+Document ../Data/pos/028.txt -> Ground Truth: Positive, Predicted as: Negative
+[ { file: '../Data/pos/005.txt', value: 1, truth: 1 } ]
+{ posCt: 1, negCt: 0 }
+Document ../Data/pos/029.txt -> Ground Truth: Positive, Predicted as: Positive
+[
+  { file: '../Data/neg/028.txt', value: 1, truth: 0 },
+  { file: '../Data/neg/006.txt', value: 1, truth: 0 },
+  { file: '../Data/pos/034.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/004.txt', value: 0, truth: 1 }
+]
+{ posCt: 2, negCt: 2 }
+Document ../Data/pos/030.txt -> Ground Truth: Positive, Predicted as: Positive
+[
+  { file: '../Data/neg/031.txt', value: 0, truth: 0 },
+  { file: '../Data/neg/022.txt', value: 1, truth: 0 },
+  { file: '../Data/pos/018.txt', value: 1, truth: 1 }
+]
+{ posCt: 1, negCt: 2 }
+Document ../Data/pos/031.txt -> Ground Truth: Positive, Predicted as: Negative
+[
+  { file: '../Data/neg/039.txt', value: 0, truth: 0 },
+  { file: '../Data/neg/030.txt', value: 1, truth: 0 }
+]
+{ posCt: 0, negCt: 2 }
+Document ../Data/pos/032.txt -> Ground Truth: Positive, Predicted as: Negative
+[
+  { file: '../Data/neg/027.txt', value: 1, truth: 0 },
+  { file: '../Data/neg/026.txt', value: 0, truth: 0 },
+  { file: '../Data/neg/021.txt', value: 1, truth: 0 },
+  { file: '../Data/neg/019.txt', value: 1, truth: 0 },
+  { file: '../Data/neg/016.txt', value: 0, truth: 0 },
+  { file: '../Data/pos/037.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/016.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/010.txt', value: 1, truth: 1 }
+]
+{ posCt: 3, negCt: 5 }
+Document ../Data/pos/033.txt -> Ground Truth: Positive, Predicted as: Negative
+[
+  { file: '../Data/neg/006.txt', value: 0, truth: 0 },
+  { file: '../Data/pos/036.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/030.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/023.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/007.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/004.txt', value: 1, truth: 1 }
+]
+{ posCt: 5, negCt: 1 }
+Document ../Data/pos/034.txt -> Ground Truth: Positive, Predicted as: Positive
+[]
+{ posCt: 0, negCt: 0 }
+Document ../Data/pos/035.txt -> Ground Truth: Positive, Predicted as: Positive
+[
+  { file: '../Data/neg/021.txt', value: 1, truth: 0 },
+  { file: '../Data/neg/019.txt', value: 1, truth: 0 },
+  { file: '../Data/neg/006.txt', value: 1, truth: 0 },
+  { file: '../Data/pos/037.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/034.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/023.txt', value: 0, truth: 1 },
+  { file: '../Data/pos/007.txt', value: 0, truth: 1 }
+]
+{ posCt: 4, negCt: 3 }
+Document ../Data/pos/036.txt -> Ground Truth: Positive, Predicted as: Positive
+[
+  { file: '../Data/neg/026.txt', value: 1, truth: 0 },
+  { file: '../Data/neg/021.txt', value: 0, truth: 0 },
+  { file: '../Data/neg/019.txt', value: 0, truth: 0 },
+  { file: '../Data/neg/016.txt', value: 1, truth: 0 },
+  { file: '../Data/pos/036.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/033.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/023.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/007.txt', value: 1, truth: 1 }
+]
+{ posCt: 4, negCt: 4 }
+Document ../Data/pos/037.txt -> Ground Truth: Positive, Predicted as: Positive
+[ { file: '../Data/neg/037.txt', value: 0, truth: 0 } ]
+{ posCt: 0, negCt: 1 }
+Document ../Data/pos/038.txt -> Ground Truth: Positive, Predicted as: Negative
+[
+  { file: '../Data/neg/013.txt', value: 0, truth: 0 },
+  { file: '../Data/pos/013.txt', value: 1, truth: 1 }
+]
+{ posCt: 1, negCt: 1 }
+Document ../Data/pos/039.txt -> Ground Truth: Positive, Predicted as: Positive
+[ { file: '../Data/pos/013.txt', value: 1, truth: 1 } ]
+{ posCt: 1, negCt: 0 }
+Document ../Data/pos/040.txt -> Ground Truth: Positive, Predicted as: Positive
+[ { file: '../Data/neg/003.txt', value: 1, truth: 0 } ]
+{ posCt: 0, negCt: 1 }
+Document ../Data/neg/001.txt -> Ground Truth: Negative, Predicted as: Negative
+[ { file: '../Data/neg/020.txt', value: 1, truth: 0 } ]
+{ posCt: 0, negCt: 1 }
+Document ../Data/neg/002.txt -> Ground Truth: Negative, Predicted as: Negative
+[ { file: '../Data/neg/001.txt', value: 1, truth: 0 } ]
+{ posCt: 0, negCt: 1 }
+Document ../Data/neg/003.txt -> Ground Truth: Negative, Predicted as: Negative
+[
+  { file: '../Data/neg/034.txt', value: 1, truth: 0 },
+  { file: '../Data/neg/011.txt', value: 1, truth: 0 }
+]
+{ posCt: 0, negCt: 2 }
+Document ../Data/neg/004.txt -> Ground Truth: Negative, Predicted as: Negative
+[]
+{ posCt: 0, negCt: 0 }
+Document ../Data/neg/005.txt -> Ground Truth: Negative, Predicted as: Positive
+[
+  { file: '../Data/pos/036.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/034.txt', value: 0, truth: 1 },
+  { file: '../Data/pos/030.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/023.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/007.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/004.txt', value: 1, truth: 1 }
+]
+{ posCt: 6, negCt: 0 }
+Document ../Data/neg/006.txt -> Ground Truth: Negative, Predicted as: Positive
+[ { file: '../Data/neg/038.txt', value: 0, truth: 0 } ]
+{ posCt: 0, negCt: 1 }
+Document ../Data/neg/007.txt -> Ground Truth: Negative, Predicted as: Negative
+[
+  { file: '../Data/pos/020.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/014.txt', value: 0, truth: 1 },
+  { file: '../Data/pos/001.txt', value: 1, truth: 1 }
+]
+{ posCt: 3, negCt: 0 }
+Document ../Data/neg/008.txt -> Ground Truth: Negative, Predicted as: Positive
+[
+  { file: '../Data/neg/012.txt', value: 1, truth: 0 },
+  { file: '../Data/pos/012.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/009.txt', value: 1, truth: 1 }
+]
+{ posCt: 2, negCt: 1 }
+Document ../Data/neg/009.txt -> Ground Truth: Negative, Predicted as: Positive
+[ { file: '../Data/neg/014.txt', value: 0, truth: 0 } ]
+{ posCt: 0, negCt: 1 }
+Document ../Data/neg/010.txt -> Ground Truth: Negative, Predicted as: Negative
+[
+  { file: '../Data/neg/034.txt', value: 0, truth: 0 },
+  { file: '../Data/neg/004.txt', value: 1, truth: 0 },
+  { file: '../Data/pos/001.txt', value: 1, truth: 1 }
+]
+{ posCt: 1, negCt: 2 }
+Document ../Data/neg/011.txt -> Ground Truth: Negative, Predicted as: Negative
+[
+  { file: '../Data/neg/023.txt', value: 1, truth: 0 },
+  { file: '../Data/neg/009.txt', value: 1, truth: 0 },
+  { file: '../Data/pos/009.txt', value: 0, truth: 1 }
+]
+{ posCt: 1, negCt: 2 }
+Document ../Data/neg/012.txt -> Ground Truth: Negative, Predicted as: Negative
+[
+  { file: '../Data/pos/039.txt', value: 0, truth: 1 },
+  { file: '../Data/pos/013.txt', value: 1, truth: 1 }
+]
+{ posCt: 2, negCt: 0 }
+Document ../Data/neg/013.txt -> Ground Truth: Negative, Predicted as: Positive
+[ { file: '../Data/neg/010.txt', value: 0, truth: 0 } ]
+{ posCt: 0, negCt: 1 }
+Document ../Data/neg/014.txt -> Ground Truth: Negative, Predicted as: Negative
+[ { file: '../Data/pos/028.txt', value: 0, truth: 1 } ]
+{ posCt: 1, negCt: 0 }
+Document ../Data/neg/015.txt -> Ground Truth: Negative, Predicted as: Positive
+[
+  { file: '../Data/neg/027.txt', value: 1, truth: 0 },
+  { file: '../Data/neg/026.txt', value: 0, truth: 0 },
+  { file: '../Data/neg/021.txt', value: 1, truth: 0 },
+  { file: '../Data/neg/019.txt', value: 1, truth: 0 },
+  { file: '../Data/pos/037.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/033.txt', value: 0, truth: 1 },
+  { file: '../Data/pos/016.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/010.txt', value: 1, truth: 1 }
+]
+{ posCt: 4, negCt: 4 }
+Document ../Data/neg/016.txt -> Ground Truth: Negative, Predicted as: Positive
+[
+  { file: '../Data/pos/026.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/025.txt', value: 1, truth: 1 }
+]
+{ posCt: 2, negCt: 0 }
+Document ../Data/neg/017.txt -> Ground Truth: Negative, Predicted as: Positive
+[]
+{ posCt: 0, negCt: 0 }
+Document ../Data/neg/018.txt -> Ground Truth: Negative, Predicted as: Positive
+[
+  { file: '../Data/neg/026.txt', value: 1, truth: 0 },
+  { file: '../Data/neg/021.txt', value: 0, truth: 0 },
+  { file: '../Data/neg/016.txt', value: 1, truth: 0 },
+  { file: '../Data/pos/037.txt', value: 0, truth: 1 },
+  { file: '../Data/pos/036.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/033.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/023.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/007.txt', value: 1, truth: 1 }
+]
+{ posCt: 5, negCt: 3 }
+Document ../Data/neg/019.txt -> Ground Truth: Negative, Predicted as: Positive
+[ { file: '../Data/neg/002.txt', value: 1, truth: 0 } ]
+{ posCt: 0, negCt: 1 }
+Document ../Data/neg/020.txt -> Ground Truth: Negative, Predicted as: Negative
+[
+  { file: '../Data/neg/026.txt', value: 1, truth: 0 },
+  { file: '../Data/neg/019.txt', value: 0, truth: 0 },
+  { file: '../Data/neg/016.txt', value: 1, truth: 0 },
+  { file: '../Data/pos/037.txt', value: 0, truth: 1 },
+  { file: '../Data/pos/036.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/033.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/023.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/007.txt', value: 1, truth: 1 }
+]
+{ posCt: 5, negCt: 3 }
+Document ../Data/neg/021.txt -> Ground Truth: Negative, Predicted as: Positive
+[
+  { file: '../Data/neg/031.txt', value: 1, truth: 0 },
+  { file: '../Data/pos/031.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/018.txt', value: 0, truth: 1 }
+]
+{ posCt: 2, negCt: 1 }
+Document ../Data/neg/022.txt -> Ground Truth: Negative, Predicted as: Positive
+[
+  { file: '../Data/neg/012.txt', value: 1, truth: 0 },
+  { file: '../Data/pos/009.txt', value: 1, truth: 1 }
+]
+{ posCt: 1, negCt: 1 }
+Document ../Data/neg/023.txt -> Ground Truth: Negative, Predicted as: Positive
+[]
+{ posCt: 0, negCt: 0 }
+Document ../Data/neg/024.txt -> Ground Truth: Negative, Predicted as: Positive
+[
+  { file: '../Data/pos/011.txt', value: 0, truth: 1 },
+  { file: '../Data/pos/006.txt', value: 0, truth: 1 },
+  { file: '../Data/pos/002.txt', value: 0, truth: 1 }
+]
+{ posCt: 3, negCt: 0 }
+Document ../Data/neg/025.txt -> Ground Truth: Negative, Predicted as: Positive
+[
+  { file: '../Data/neg/027.txt', value: 1, truth: 0 },
+  { file: '../Data/neg/021.txt', value: 1, truth: 0 },
+  { file: '../Data/neg/019.txt', value: 1, truth: 0 },
+  { file: '../Data/neg/016.txt', value: 0, truth: 0 },
+  { file: '../Data/pos/037.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/033.txt', value: 0, truth: 1 },
+  { file: '../Data/pos/016.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/010.txt', value: 1, truth: 1 }
+]
+{ posCt: 4, negCt: 4 }
+Document ../Data/neg/026.txt -> Ground Truth: Negative, Predicted as: Positive
+[
+  { file: '../Data/neg/026.txt', value: 1, truth: 0 },
+  { file: '../Data/neg/016.txt', value: 1, truth: 0 },
+  { file: '../Data/pos/033.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/021.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/016.txt', value: 0, truth: 1 },
+  { file: '../Data/pos/010.txt', value: 0, truth: 1 }
+]
+{ posCt: 4, negCt: 2 }
+Document ../Data/neg/027.txt -> Ground Truth: Negative, Predicted as: Positive
+[
+  { file: '../Data/pos/030.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/004.txt', value: 1, truth: 1 }
+]
+{ posCt: 2, negCt: 0 }
+Document ../Data/neg/028.txt -> Ground Truth: Negative, Predicted as: Positive
+[]
+{ posCt: 0, negCt: 0 }
+Document ../Data/neg/029.txt -> Ground Truth: Negative, Predicted as: Positive
+[
+  { file: '../Data/neg/039.txt', value: 1, truth: 0 },
+  { file: '../Data/pos/032.txt', value: 1, truth: 1 }
+]
+{ posCt: 1, negCt: 1 }
+Document ../Data/neg/030.txt -> Ground Truth: Negative, Predicted as: Positive
+[
+  { file: '../Data/neg/022.txt', value: 1, truth: 0 },
+  { file: '../Data/pos/031.txt', value: 0, truth: 1 },
+  { file: '../Data/pos/018.txt', value: 1, truth: 1 }
+]
+{ posCt: 2, negCt: 1 }
+Document ../Data/neg/031.txt -> Ground Truth: Negative, Predicted as: Positive
+[]
+{ posCt: 0, negCt: 0 }
+Document ../Data/neg/032.txt -> Ground Truth: Negative, Predicted as: Positive
+[ { file: '../Data/pos/027.txt', value: 0, truth: 1 } ]
+{ posCt: 1, negCt: 0 }
+Document ../Data/neg/033.txt -> Ground Truth: Negative, Predicted as: Positive
+[
+  { file: '../Data/neg/011.txt', value: 0, truth: 0 },
+  { file: '../Data/neg/004.txt', value: 1, truth: 0 },
+  { file: '../Data/pos/001.txt', value: 1, truth: 1 }
+]
+{ posCt: 1, negCt: 2 }
+Document ../Data/neg/034.txt -> Ground Truth: Negative, Predicted as: Negative
+[]
+{ posCt: 0, negCt: 0 }
+Document ../Data/neg/035.txt -> Ground Truth: Negative, Predicted as: Positive
+[
+  { file: '../Data/neg/040.txt', value: 1, truth: 0 },
+  { file: '../Data/pos/019.txt', value: 0, truth: 1 },
+  { file: '../Data/pos/017.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/015.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/008.txt', value: 0, truth: 1 }
+]
+{ posCt: 4, negCt: 1 }
+Document ../Data/neg/036.txt -> Ground Truth: Negative, Predicted as: Positive
+[ { file: '../Data/pos/038.txt', value: 0, truth: 1 } ]
+{ posCt: 1, negCt: 0 }
+Document ../Data/neg/037.txt -> Ground Truth: Negative, Predicted as: Positive
+[ { file: '../Data/neg/007.txt', value: 0, truth: 0 } ]
+{ posCt: 0, negCt: 1 }
+Document ../Data/neg/038.txt -> Ground Truth: Negative, Predicted as: Negative
+[
+  { file: '../Data/neg/030.txt', value: 1, truth: 0 },
+  { file: '../Data/pos/032.txt', value: 0, truth: 1 }
+]
+{ posCt: 1, negCt: 1 }
+Document ../Data/neg/039.txt -> Ground Truth: Negative, Predicted as: Positive
+[
+  { file: '../Data/neg/036.txt', value: 1, truth: 0 },
+  { file: '../Data/pos/019.txt', value: 1, truth: 1 },
+  { file: '../Data/pos/017.txt', value: 0, truth: 1 },
+  { file: '../Data/pos/015.txt', value: 0, truth: 1 },
+  { file: '../Data/pos/008.txt', value: 1, truth: 1 }
+]
+{ posCt: 4, negCt: 1 }
+Document ../Data/neg/040.txt -> Ground Truth: Negative, Predicted as: Positive
+Score: 42/80
+Accuracy: 52.5%
