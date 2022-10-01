@@ -24,39 +24,40 @@ for (let i = 0; i < lexiconWords.length; i++){
 }
 
 function sentimentalAnalysis(filepath){
-    const {feat_vec} = cse408_bow(filepath, lexiconWords);
+    const {feat_vec, count} = cse408_bow(filepath, lexiconWords);
+
+    //if filepath contains 'neg' then it is negative
+    const truth = filepath.includes('neg') ? 0 : 1;
+
     let score = 0;
     for (const word in feat_vec){
         if (word in weights){
             score += weights[word] * feat_vec[word];
         }
     }
-    
+    let sent = '';
     if (score > 0){
-        if (score > 0.7){
-            console.log(score);    
-            console.log("Highly Positive");
+        if (score > 0.7){   
+            sent = "Highly Positive";
         }
         else {
-            console.log(score);
-            console.log("Positive");
+            sent = "Positive";
         }
     }
 
     if (score < 0){
         if (score < -0.7){
-            console.log(score);
-            console.log("Highly Negative");
+            sent = "Highly Negative";
         }
         else {
-            console.log(score);
-            console.log("Negative");
+            sent = "Negative";
         }
     }
 
     if (score == 0){
-        console.log("Neutral");
+        sent = "Neutral";
     }
+    console.log(`Filename: ${filepath}, Groundtruth: ${truth? 'positive' : 'negative'}, Score: ${score}, Sentiment: ${sent}`);
 }
 
 module.exports = {sentimentalAnalysis};

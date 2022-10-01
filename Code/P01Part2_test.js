@@ -3,23 +3,18 @@ const {sentimentalAnalysis} = require('./sentimentalAnalysis.js');
 if (!help){
     for (let i = 1; i < 41; i++) {
         if (i < 10){
-            console.log(`../Data/pos/00${1}.txt`);
             sentimentalAnalysis(`../Data/pos/00${1}.txt`);
         }
         else {
-            console.log(`../Data/pos/0${i}.txt`);
             sentimentalAnalysis(`../Data/pos/0${i}.txt`);
         }
     }
 
-
     for (let i = 1; i < 41; i++) {
         if (i < 10){
-            console.log(`../Data/pos/00${1}.txt`);
             sentimentalAnalysis(`../Data/neg/00${i}.txt`);
         }
         else {
-            console.log(`../Data/pos/0${i}.txt`);
             sentimentalAnalysis(`../Data/neg/0${i}.txt`);
         }
     }

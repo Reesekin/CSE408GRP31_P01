@@ -23,9 +23,9 @@ function Euclidean(test_feat, train_label, train_feat, k){ //SSD
         }
     }
     // sort sbArr by sum
-    train_feat.sort((a, b) => (a.ssd > b.ssd) ? 1 : -1);
-    // get top k
-    const topK = train_feat.filter((sb) => sb['value'] < (k));
+    train_feat.sort((a, b) => (a.value > b.value) ? 1 : -1);
+    const filtered = train_feat.filter(item => item.length !== 0);
+    const topK = filtered.slice(0, k)
     if (!clean) console.log(topK);
     return topK;
 }
@@ -47,16 +47,6 @@ function CosineDistance(test_feat, train_label, train_feat, k){
             for (const f of b){
                 B2 += f*f;
             }
-            //normalize a vector
-            let aNorm = [];
-            for (const f of a){
-                aNorm.push(f/sqrt(A2));
-            }
-            //normalize b vector
-            let bNorm = [];
-            for (const f of b){
-                bNorm.push(f/sqrt(B2));
-            }
             //dot product
             const numerator = dot(a, b);
             const denominator = multiply(sqrt(A2), sqrt(B2));
@@ -65,9 +55,10 @@ function CosineDistance(test_feat, train_label, train_feat, k){
         }
     }
     // sort sbArr by sum
-    train_feat.sort((a, b) => (a.truth > b.truth) ? 1 : -1);
+    train_feat.sort((a, b) => (a.value < b.value) ? 1 : -1);
     // get top k
-    const topK = train_feat.filter((sb) => sb['value'] > (1/k));
+    const filtered = train_feat.filter(item => item.length !== 0);
+    const topK = filtered.slice(0, k)
     if (!clean) console.log(topK);
     return topK;
 }
@@ -90,6 +81,7 @@ function CosineDistance(test_feat, train_label, train_feat, k){
 //     return {IDF: Math.log(numerator/denominator), numerator, denominator};
 // }
 
+// count occurances
 function Sb(a, b){
     let c = Array.from(Array(a.length))
     for (const f in a){
@@ -105,6 +97,20 @@ function Sb(a, b){
     }
     return c;
 }
+// // do not count occurances
+// function Sb(a, b){
+//     let c = Array.from(Array(a.length))
+//     for (const f in a){
+//         if (a[f] > 0 && b[f] > 0){
+//             c[f] = 1;
+//         }
+//         else {
+//             c[f] = 0;
+//         }
+//     }
+//     return c;
+// }
+
 
 function Word(test_feat, train_label, train_feat, k){
     const i = train_label.findIndex(label => label.length === 0);
@@ -116,14 +122,15 @@ function Word(test_feat, train_label, train_feat, k){
             train_feat[j] = {file: test_feat[j].path, value:sum, truth: test_feat[j].label};
         }
     }
-    // invert every sum
-    for (const sb of train_feat){
-        sb.value = (1/sb.value);
-    }
+    // // invert every sum
+    // for (const sb of train_feat){
+    //     sb.value = (sb.value);
+    // }
     // sort sbArr by sum
-    train_feat.sort((a, b) => (a.value > b.value) ? 1 : -1);
+    train_feat.sort((a, b) => (a.value < b.value) ? 1 : -1);
     // get top k
-    const topK = train_feat.filter((sb) => sb['value'] < (1/k));
+    const filtered = train_feat.filter(item => item.length !== 0);
+    const topK = filtered.slice(0, k)
     if (!clean) console.log(topK);
     return topK;
 }
