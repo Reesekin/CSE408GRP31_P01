@@ -1,3 +1,3 @@
-const {norm, divide, } = require('mathjs')
+const {dot} = require('mathjs')
 
-console.log(divide([1, 2, 3],norm([1, 2, 3])));
+console.log(dot([3, 2, 0, 5], [1, 0, 0, 0]));
