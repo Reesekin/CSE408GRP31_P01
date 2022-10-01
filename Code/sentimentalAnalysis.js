@@ -36,6 +36,8 @@ function sentimentalAnalysis(filepath){
         }
     }
     let sent = '';
+    score = score/count;
+
     if (score > 0){
         if (score > 0.7){   
             sent = "Highly Positive";
@@ -57,7 +59,7 @@ function sentimentalAnalysis(filepath){
     if (score == 0){
         sent = "Neutral";
     }
-    console.log(`Filename: ${filepath}, Groundtruth: ${truth? 'positive' : 'negative'}, Score: ${score}, Sentiment: ${sent}`);
+    console.log(`Filename: ${filepath}, Groundtruth: ${truth? 'Positive' : 'Negative'}, Score: ${score}, Sentiment: ${sent}`);
 }
 
 module.exports = {sentimentalAnalysis};
