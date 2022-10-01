@@ -60,6 +60,7 @@ function sentimentalAnalysis(filepath){
         sent = "Neutral";
     }
     console.log(`Filename: ${filepath}, Groundtruth: ${truth? 'Positive' : 'Negative'}, Score: ${score}, Sentiment: ${sent}`);
+    return score;
 }
 
 module.exports = {sentimentalAnalysis};

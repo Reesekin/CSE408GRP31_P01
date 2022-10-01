@@ -1,23 +1,41 @@
 const {help} = require('./buildVoc.js');
 const {sentimentalAnalysis} = require('./sentimentalAnalysis.js');
+let score_compare = 0;
+let correct_ct = 0;
 if (!help){
     for (let i = 1; i < 41; i++) {
         if (i < 10){
-            sentimentalAnalysis(`../Data/pos/00${i}.txt`);
+            score_compare = sentimentalAnalysis(`../Data/pos/00${i}.txt`);
+            if (score_compare > 0){
+                correct_ct++;
+            }
         }
         else {
             sentimentalAnalysis(`../Data/pos/0${i}.txt`);
+            if (score_compare > 0){
+                correct_ct++;
+            }
         }
     }
 
     for (let i = 1; i < 41; i++) {
         if (i < 10){
             sentimentalAnalysis(`../Data/neg/00${i}.txt`);
+            if (score_compare < 0){
+                correct_ct++;
+            }
         }
         else {
             sentimentalAnalysis(`../Data/neg/0${i}.txt`);
+            if (score_compare < 0){
+                correct_ct++;
+            }
         }
     }
+    const accuracy = (correct_ct / 80)*100;
+    console.log(`Score: ${correct_ct}/80`);
+    console.log(`Accuracy: ${accuracy}%`);
+
 }
 else {
     console.log('Welcome to GROUP 31\'s Project 1 : Created by Tommy Thai, Huy Tao, and Jeffrey Li');
