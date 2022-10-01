@@ -11,7 +11,14 @@
     Language: javascript
 */
 
-How to run 
+Initial
+
+How to run k-Nearest Neighbor Classification:
+1. Open Visual Studio Code
+2. Install node.js
+3. Install npm (run npm i in terminal
+4. CD to /code folder
+5. Run node .\P01Part1_test.js 
 
 How to run sentimentalAnalysis.js:
 1. Open Visual Studio Code
