@@ -3,7 +3,7 @@ const {sentimentalAnalysis} = require('./sentimentalAnalysis.js');
 if (!help){
     for (let i = 1; i < 41; i++) {
         if (i < 10){
-            sentimentalAnalysis(`../Data/pos/00${1}.txt`);
+            sentimentalAnalysis(`../Data/pos/00${i}.txt`);
         }
         else {
             sentimentalAnalysis(`../Data/pos/0${i}.txt`);
