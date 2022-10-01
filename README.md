@@ -46,11 +46,11 @@ The first two arguments are required:
 1. CD into /code/bin
 2. Use the corresponding binary to your operating system.
 EX Windows Part 1:
-    P01Part1_test.exe 1 3
+    P01Part2_test-win.exe 1 3
 EX Linux Part 1:
-    ./P01Part1_test 1 3
+    ./P01Part2_test-linux 1 3
 EX Windows Part 2:
-    P01Part2_test.exe
+    P01Part2_test-win.exe
 EX Linux Part 2:
-    ./P01Part2_test
+    ./P01Part2_test-linux
 ```
