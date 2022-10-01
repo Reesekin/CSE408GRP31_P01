@@ -11,7 +11,7 @@ if (!help){
             }
         }
         else {
-            sentimentalAnalysis(`../Data/pos/0${i}.txt`);
+            score_compare = sentimentalAnalysis(`../Data/pos/0${i}.txt`);
             if (score_compare > 0){
                 correct_ct++;
             }
@@ -20,13 +20,13 @@ if (!help){
 
     for (let i = 1; i < 41; i++) {
         if (i < 10){
-            sentimentalAnalysis(`../Data/neg/00${i}.txt`);
+            score_compare = sentimentalAnalysis(`../Data/neg/00${i}.txt`);
             if (score_compare < 0){
                 correct_ct++;
             }
         }
         else {
-            sentimentalAnalysis(`../Data/neg/0${i}.txt`);
+            score_compare = sentimentalAnalysis(`../Data/neg/0${i}.txt`);
             if (score_compare < 0){
                 correct_ct++;
             }
